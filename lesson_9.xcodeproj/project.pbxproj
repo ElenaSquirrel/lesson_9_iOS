@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C03963AC219F293C00BA889F /* FontListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03963AB219F293C00BA889F /* FontListViewController.swift */; };
 		C0AE4267219E48B200BD8682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AE4266219E48B200BD8682 /* AppDelegate.swift */; };
-		C0AE4269219E48B200BD8682 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AE4268219E48B200BD8682 /* ViewController.swift */; };
 		C0AE426C219E48B200BD8682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0AE426A219E48B200BD8682 /* Main.storyboard */; };
 		C0AE426E219E48B300BD8682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0AE426D219E48B300BD8682 /* Assets.xcassets */; };
 		C0AE4271219E48B300BD8682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0AE426F219E48B300BD8682 /* LaunchScreen.storyboard */; };
 		C0AE4279219E4CD300BD8682 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AE4278219E4CD300BD8682 /* FavoritesList.swift */; };
+		C0AE427D219E5DE800BD8682 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AE427C219E5DE800BD8682 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C03963AB219F293C00BA889F /* FontListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontListViewController.swift; sourceTree = "<group>"; };
 		C0AE4263219E48B200BD8682 /* lesson_9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lesson_9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AE4266219E48B200BD8682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0AE4268219E48B200BD8682 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0AE426B219E48B200BD8682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0AE426D219E48B300BD8682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0AE4270219E48B300BD8682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0AE4272219E48B300BD8682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0AE4278219E4CD300BD8682 /* FavoritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
+		C0AE427C219E5DE800BD8682 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				C0AE4266219E48B200BD8682 /* AppDelegate.swift */,
-				C0AE4268219E48B200BD8682 /* ViewController.swift */,
+				C0AE4278219E4CD300BD8682 /* FavoritesList.swift */,
+				C0AE427C219E5DE800BD8682 /* RootViewController.swift */,
 				C0AE426A219E48B200BD8682 /* Main.storyboard */,
 				C0AE426D219E48B300BD8682 /* Assets.xcassets */,
 				C0AE426F219E48B300BD8682 /* LaunchScreen.storyboard */,
 				C0AE4272219E48B300BD8682 /* Info.plist */,
-				C0AE4278219E4CD300BD8682 /* FavoritesList.swift */,
+				C03963AB219F293C00BA889F /* FontListViewController.swift */,
 			);
 			path = lesson_9;
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0AE4269219E48B200BD8682 /* ViewController.swift in Sources */,
 				C0AE4279219E4CD300BD8682 /* FavoritesList.swift in Sources */,
+				C03963AC219F293C00BA889F /* FontListViewController.swift in Sources */,
 				C0AE4267219E48B200BD8682 /* AppDelegate.swift in Sources */,
+				C0AE427D219E5DE800BD8682 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
