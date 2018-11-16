@@ -9,7 +9,6 @@
 import UIKit
 
 class FontListViewController: UITableViewController {
-
     var fontNames: [String] = []
     var showsFavorites:Bool = false
     private var cellPointSize: CGFloat!
@@ -19,6 +18,8 @@ class FontListViewController: UITableViewController {
         super.viewDidLoad()
         
         let preferredTableViewFont =
+           // UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
+        
             UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
         cellPointSize = preferredTableViewFont.pointSize
         tableView.estimatedRowHeight = cellPointSize
@@ -68,18 +69,21 @@ class FontListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        //UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if !showsFavorites {
             return
         }
         
-        if editingStyle == UITableViewCellEditingStyle.delete {
+        //if editingStyle == UITableViewCellEditingStyle.delete {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
             // Delete the row from the data source
             let favorite = fontNames[indexPath.row]
             FavoritesList.sharedFavoritesList.removeFavorite(fontName: favorite)
             fontNames = FavoritesList.sharedFavoritesList.favorites
             
             tableView.deleteRows(at: [indexPath],
-                                 with: UITableView.RowAnimation.fade)
+                                 //with: UITableViewRowAnimation.fade)
+                with: UITableView.RowAnimation.fade)
         }
         
     }

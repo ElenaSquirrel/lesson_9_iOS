@@ -9,7 +9,6 @@
 import UIKit
 
 class FontInfoViewController: UIViewController {
-
     var font: UIFont!
     var favorite: Bool = false
     @IBOutlet weak var fontSampleLabel: UILabel!

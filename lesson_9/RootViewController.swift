@@ -14,18 +14,19 @@ class RootViewController: UITableViewController {
     private var favoritesList: FavoritesList!
     private static let familyCell = "FamilyName"
     private static let favoritesCell = "Favorites"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         familyNames = (UIFont.familyNames as [String]).sorted()
         let preferredTableViewFont =
             UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
+        //UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
         cellPointSize = preferredTableViewFont.pointSize
         favoritesList = FavoritesList.sharedFavoritesList
         tableView.estimatedRowHeight = cellPointSize
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
@@ -99,25 +100,25 @@ class RootViewController: UITableViewController {
     
     // MARK: - Navigation
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        // Get the new view controller using [segue destinationViewController].
-//        // Pass the selected object to the new view controller.
-//        let indexPath = tableView.indexPath(for: sender as! UITableViewCell)!
-//        let listVC = segue.destination as! FontListViewController
-//
-//        if indexPath.section == 0 {
-//            // Font names list
-//            let familyName = familyNames[indexPath.row]
-//            listVC.fontNames = (UIFont.fontNames(forFamilyName: familyName) as [String]).sorted()
-//            listVC.navigationItem.title = familyName
-//            listVC.showsFavorites = false
-//        } else {
-//            // Favorites list
-//            listVC.fontNames = favoritesList.favorites
-//            listVC.navigationItem.title = "Favorites"
-//            listVC.showsFavorites = true
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+        let indexPath = tableView.indexPath(for: sender as! UITableViewCell)!
+        let listVC = segue.destination as! FontListViewController
+        
+        if indexPath.section == 0 {
+            // Font names list
+            let familyName = familyNames[indexPath.row]
+            listVC.fontNames = (UIFont.fontNames(forFamilyName: familyName) as [String]).sorted()
+            listVC.navigationItem.title = familyName
+            listVC.showsFavorites = false
+        } else {
+            // Favorites list
+            listVC.fontNames = favoritesList.favorites
+            listVC.navigationItem.title = "Favorites"
+            listVC.showsFavorites = true
+        }
+    }
     
     func fontForDisplay(atIndexPath indexPath: NSIndexPath) -> UIFont? {
         if indexPath.section == 0 {

@@ -9,11 +9,10 @@
 import Foundation
 import UIKit
 
-class FavoritesList{
-    public static let sharedFavoritesList = FavoritesList()
+class FavoritesList {
+    static let sharedFavoritesList = FavoritesList()
     private(set) var favorites:[String]
     
-
     init() {
         let defaults = UserDefaults.standard
         let storedFavorites = defaults.object(forKey: "favorites") as? [String]
@@ -26,7 +25,7 @@ class FavoritesList{
             saveFavorites()
         }
     }
-
+    
     func removeFavorite(fontName: String) {
         if let index = favorites.index(of: fontName) {
             favorites.remove(at: index)
@@ -48,3 +47,4 @@ class FavoritesList{
     }
     
 }
+
