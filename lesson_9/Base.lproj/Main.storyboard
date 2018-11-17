@@ -112,7 +112,7 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtL-7U-nw2" userLabel="Font Sample Label">
-                                <rect key="frame" x="29" y="74" width="317" height="482"/>
+                                <rect key="frame" x="29" y="74" width="317" height="23.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -138,12 +138,11 @@
                             <constraint firstItem="4aD-pV-1AV" firstAttribute="leading" secondItem="euw-KI-g16" secondAttribute="leadingMargin" id="Sab-t8-FhH"/>
                             <constraint firstItem="8Rh-RP-Nb9" firstAttribute="top" secondItem="oX4-VC-YVD" secondAttribute="bottom" constant="20" id="SnV-6e-68X"/>
                             <constraint firstItem="KtL-7U-nw2" firstAttribute="top" secondItem="Pq8-f5-m33" secondAttribute="top" constant="10" id="Y6A-v8-oGK"/>
-                            <constraint firstItem="9MS-eg-44t" firstAttribute="top" secondItem="KtL-7U-nw2" secondAttribute="bottom" constant="20" id="etg-Dc-geo"/>
                             <constraint firstItem="oX4-VC-YVD" firstAttribute="leading" secondItem="9MS-eg-44t" secondAttribute="trailing" constant="10" id="gSm-Fr-MEE"/>
                             <constraint firstAttribute="bottom" secondItem="4aD-pV-1AV" secondAttribute="bottom" constant="20" symbolic="YES" id="iIw-wj-JMD"/>
                             <constraint firstItem="oX4-VC-YVD" firstAttribute="trailing" secondItem="8Rh-RP-Nb9" secondAttribute="trailing" id="qq1-2L-Ya4"/>
                             <constraint firstItem="KtL-7U-nw2" firstAttribute="leading" secondItem="Pq8-f5-m33" secondAttribute="leading" constant="29" id="uMa-P1-bK0"/>
-                            <constraint firstItem="oX4-VC-YVD" firstAttribute="top" secondItem="KtL-7U-nw2" secondAttribute="bottom" constant="15" id="vog-A5-RHg"/>
+                            <constraint firstItem="oX4-VC-YVD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KtL-7U-nw2" secondAttribute="bottom" constant="15" id="vog-A5-RHg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pq8-f5-m33"/>
                     </view>
